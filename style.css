@@ -154,11 +154,29 @@ hr {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .blogs {
+    .blogs,
+    .courses {
         grid-template-columns: repeat(1, 1fr);
     }
 
+
+}
+
+/* tablet devices */
+@media only screen and (min-width: 689px) and (max-width:992px) {
+    .container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .players,
+
     .courses {
-        display: none;
+        background-color: aliceblue;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
